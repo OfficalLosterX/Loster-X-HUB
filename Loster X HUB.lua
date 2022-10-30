@@ -589,7 +589,7 @@ local FreeHUB = function()
 
 			while wait(0.01) do
 				if Money then
-					game.TweenService:Create(script.Parent.Parent, TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0), {Position = UDim2.new(0, game.Players.LocalPlayer:GetMouse().X, 0, game.Players.LocalPlayer:GetMouse().Y)}):Play()
+					game.TweenService:Create(script.Parent.Parent, TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0), {Position = UDim2.new(0, game.Players.LocalPlayer:GetMouse().X, 0, game.Players.LocalPlayer:GetMouse().Y)}):Play()
 				end
 			end
 		end
