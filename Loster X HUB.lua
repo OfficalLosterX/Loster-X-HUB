@@ -855,8 +855,6 @@ local function VKQHIH_fake_script() -- BTN_2.Manager
 
 		v3.Visible = false
 
-		wait(math.random(2, 3))
-
 		v2:Create(v1, TweenInfo.new(Time, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0), {Transparency = 1, Position = UDim2.new(0.5, 0, 0.55, 0)}):Play()
 
 		wait(WaitTime)
