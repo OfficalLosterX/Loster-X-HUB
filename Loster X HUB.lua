@@ -1,7 +1,7 @@
 --//-- Loster X HUB v1 --\\--
 
 local FreeHUB = function()
-	if game.PlaceId == 8908228901 then -- SharkBite 2
+	if game.PlaceId == 8908228901 then
 		-- Instances:
 
 		local gfihjgugyh5470gc78g5fef4fs = Instance.new("ScreenGui")
@@ -589,7 +589,7 @@ local FreeHUB = function()
 
 			while wait(0.01) do
 				if Money then
-					game.TweenService:Create(script.Parent.Parent, TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0), {Position = UDim2.new(0, game.Players.LocalPlayer:GetMouse().X, 0, game.Players.LocalPlayer:GetMouse().Y)}):Play()
+					game.TweenService:Create(script.Parent.Parent, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0), {Position = UDim2.new(0, game.Players.LocalPlayer:GetMouse().X, 0, game.Players.LocalPlayer:GetMouse().Y)}):Play()
 				end
 			end
 		end
@@ -764,7 +764,7 @@ TBox_2.BackgroundTransparency = 1.000
 TBox_2.Position = UDim2.new(0.5, 0, 0.5, 0)
 TBox_2.Size = UDim2.new(0, 200, 0, 10)
 TBox_2.Font = Enum.Font.SourceSansBold
-TBox_2.Text = ""
+TBox_2.Text = "Key"
 TBox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TBox_2.TextScaled = true
 TBox_2.TextSize = 14.000
@@ -788,7 +788,7 @@ local function KEHCU_fake_script() -- OpeningFrame.Manager
 	v3.Visible = false
 
 	local Time = 1
-	local WaitTime = math.random(2, 5)
+	local WaitTime = math.random(1, 2)
 
 	v2:Create(v1, TweenInfo.new(Time, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0), {Transparency = 0, Position = UDim2.new(0.5, 0, 0.5, 0)}):Play()
 
@@ -855,13 +855,15 @@ local function VKQHIH_fake_script() -- BTN_2.Manager
 
 		v3.Visible = false
 
+        wait(1)
+
+        FreeHUB()
+
 		v2:Create(v1, TweenInfo.new(Time, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0), {Transparency = 1, Position = UDim2.new(0.5, 0, 0.55, 0)}):Play()
 
 		wait(WaitTime)
 
 		script.Parent.Parent.Parent.Parent.Parent:Destroy()
-		
-		FreeHUB()
 
 	end)
 end
