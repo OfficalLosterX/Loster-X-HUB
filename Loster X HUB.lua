@@ -680,10 +680,21 @@ local FreeHUB = function()
 			end)
 		end
 		coroutine.wrap(HXCK_fake_script)()
+	else
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "Loster X HUB",
+			Text = "Loster X HUB does not Support this Place :(.",
+			Icon = "rbxassetid://11415803174",
+			Duration = 5
+		})
 	end
 end
 
--- Instances:
+local ProHUB = function()
+	FreeHUB()
+end
+
+-- Instances
 
 local fmrfj84ht9m5rym30wcxyt54 = Instance.new("ScreenGui")
 local OpeningFrame = Instance.new("Frame")
@@ -860,11 +871,11 @@ local function ORTX_fake_script() -- BTN.Manager
 
 			v3.Visible = false
 
-			wait(math.random(2, 3))
+			wait(math.random(1, 3))
+
+			ProHUB()
 
 			v2:Create(v1, TweenInfo.new(Time, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0), {Transparency = 1, Position = UDim2.new(0.5, 0, 0.55, 0)}):Play()
-
-			wait(Time + WaitTime)
 		else
 			local v1 = script.Parent
 			local v2 = game:GetService("TweenService")
