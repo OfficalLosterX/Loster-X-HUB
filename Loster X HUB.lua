@@ -1,7 +1,25 @@
 --//-- Loster X HUB v1 --\\--
 
+if game.CoreGui:FindFirstChild("gfihjgugyh5470gc78g5fef4fs") then
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Loster X HUB",
+        Text = "Loster X HUB has already been executed.",
+        Icon = "rbxassetid://11415803174",
+        Duration = 2
+    })
+    return
+elseif game.CoreGui:FindFirstChild("fmrfj84ht9m5rym30wcxyt54") then
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Loster X HUB",
+        Text = "Loster X HUB has already been executed.",
+        Icon = "rbxassetid://11415803174",
+        Duration = 2
+    })
+    return
+end
+
 local FreeHUB = function()
-	if game.PlaceId == 8908228901 then
+	if game.PlaceId == 8908228901 then -- SharkBite 2
 		-- Instances:
 
 		local gfihjgugyh5470gc78g5fef4fs = Instance.new("ScreenGui")
@@ -59,7 +77,7 @@ local FreeHUB = function()
 		MFrame.Active = true
 		MFrame.AnchorPoint = Vector2.new(0.5, 0.0250000004)
 		MFrame.BackgroundColor3 = Color3.fromRGB(30, 0, 53)
-		MFrame.Position = UDim2.new(0.245545059, 0, 0.241632819, 0)
+		MFrame.Position = UDim2.new(0.316299766, 0, 0.185280353, 0)
 		MFrame.Size = UDim2.new(0, 400, 0, 300)
 
 		UICorner.Parent = MFrame
@@ -402,19 +420,19 @@ local FreeHUB = function()
 
 		-- Scripts:
 
-		local function TTSXMHP_fake_script() -- Label.LocalScript 
+		local function BDROU_fake_script() -- Label.LocalScript 
 			local script = Instance.new('LocalScript', Label)
 
 			script.Parent.Text = "Welcome, "..game.Players.LocalPlayer.DisplayName.."!"
 		end
-		coroutine.wrap(TTSXMHP_fake_script)()
-		local function MLSFDNP_fake_script() -- Label_2.LocalScript 
+		coroutine.wrap(BDROU_fake_script)()
+		local function ZRZO_fake_script() -- Label_2.LocalScript 
 			local script = Instance.new('LocalScript', Label_2)
 
 			script.Parent.Text = "SharkBite 2 - "..game.PlaceId
 		end
-		coroutine.wrap(MLSFDNP_fake_script)()
-		local function WCGNLM_fake_script() -- Toggle.Manager 
+		coroutine.wrap(ZRZO_fake_script)()
+		local function YITH_fake_script() -- Toggle.Manager 
 			local script = Instance.new('LocalScript', Toggle)
 
 			local Clicked = false
@@ -432,6 +450,14 @@ local FreeHUB = function()
 					wait(0.3)
 					Clicked = true
 				end
+			end)
+
+			script.Parent.MouseEnter:Connect(function()
+				game.TweenService:Create(script.Parent, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0), {BackgroundTransparency = 0.75}):Play()
+			end)
+
+			script.Parent.MouseLeave:Connect(function()
+				game.TweenService:Create(script.Parent, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0), {BackgroundTransparency = 0.9}):Play()
 			end)
 
 			while wait(0.001) do
@@ -461,8 +487,8 @@ local FreeHUB = function()
 				end
 			end
 		end
-		coroutine.wrap(WCGNLM_fake_script)()
-		local function BTTSRW_fake_script() -- Toggle_2.Manager 
+		coroutine.wrap(YITH_fake_script)()
+		local function ZRGIGHM_fake_script() -- Toggle_2.Manager 
 			local script = Instance.new('LocalScript', Toggle_2)
 
 			local Clicked = false
@@ -487,6 +513,14 @@ local FreeHUB = function()
 				end
 			end)
 
+			script.Parent.MouseEnter:Connect(function()
+				game.TweenService:Create(script.Parent, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0), {BackgroundTransparency = 0.75}):Play()
+			end)
+
+			script.Parent.MouseLeave:Connect(function()
+				game.TweenService:Create(script.Parent, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0), {BackgroundTransparency = 0.9}):Play()
+			end)
+
 			while wait(5) do
 				if Allowed then
 					for i, v in pairs(game.Workspace.Sharks:GetChildren()) do
@@ -497,8 +531,8 @@ local FreeHUB = function()
 				end
 			end
 		end
-		coroutine.wrap(BTTSRW_fake_script)()
-		local function SKAX_fake_script() -- Toggle_3.Manager 
+		coroutine.wrap(ZRGIGHM_fake_script)()
+		local function HOGX_fake_script() -- Toggle_3.Manager 
 			local script = Instance.new('LocalScript', Toggle_3)
 
 			local Clicked = false
@@ -523,6 +557,14 @@ local FreeHUB = function()
 				end
 			end)
 
+			script.Parent.MouseEnter:Connect(function()
+				game.TweenService:Create(script.Parent, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0), {BackgroundTransparency = 0.75}):Play()
+			end)
+
+			script.Parent.MouseLeave:Connect(function()
+				game.TweenService:Create(script.Parent, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0), {BackgroundTransparency = 0.9}):Play()
+			end)
+
 			while wait(5) do
 				if Allowed then
 					for i, v in pairs(game.Workspace.Boats:GetChildren()) do
@@ -533,8 +575,8 @@ local FreeHUB = function()
 				end
 			end
 		end
-		coroutine.wrap(SKAX_fake_script)()
-		local function ULSJ_fake_script() -- MFrame.Manager 
+		coroutine.wrap(HOGX_fake_script)()
+		local function MIWK_fake_script() -- MFrame.Manager 
 			local script = Instance.new('LocalScript', MFrame)
 
 			for i, v in pairs(script.Parent.TabBTNs:GetChildren()) do
@@ -556,8 +598,8 @@ local FreeHUB = function()
 				end
 			end
 		end
-		coroutine.wrap(ULSJ_fake_script)()
-		local function IKCYC_fake_script() -- DragBar.Manager 
+		coroutine.wrap(MIWK_fake_script)()
+		local function XLJYEX_fake_script() -- DragBar.Manager 
 			local script = Instance.new('LocalScript', DragBar)
 
 			local UIS = game:GetService("UserInputService")
@@ -593,8 +635,8 @@ local FreeHUB = function()
 				end
 			end
 		end
-		coroutine.wrap(IKCYC_fake_script)()
-		local function LWPEJN_fake_script() -- Close.Manager 
+		coroutine.wrap(XLJYEX_fake_script)()
+		local function NVILT_fake_script() -- Close.Manager 
 			local script = Instance.new('LocalScript', Close)
 
 			script.Parent.MouseEnter:Connect(function()
@@ -609,8 +651,8 @@ local FreeHUB = function()
 				script.Parent.Parent.Parent:Destroy()
 			end)
 		end
-		coroutine.wrap(LWPEJN_fake_script)()
-		local function BGOEI_fake_script() -- Min.Manager 
+		coroutine.wrap(NVILT_fake_script)()
+		local function HXCK_fake_script() -- Min.Manager 
 			local script = Instance.new('LocalScript', Min)
 
 			script.Parent.MouseEnter:Connect(function()
@@ -637,7 +679,7 @@ local FreeHUB = function()
 				end
 			end)
 		end
-		coroutine.wrap(BGOEI_fake_script)()
+		coroutine.wrap(HXCK_fake_script)()
 	end
 end
 
@@ -705,7 +747,7 @@ ProBTN.Size = UDim2.new(0, 125, 0, 30)
 BTN.Name = "BTN"
 BTN.Parent = ProBTN
 BTN.AnchorPoint = Vector2.new(0.5, 0.5)
-BTN.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+BTN.BackgroundColor3 = Color3.fromRGB(212, 175, 55)
 BTN.BackgroundTransparency = 0.250
 BTN.Position = UDim2.new(0.5, 0, 0.349999994, 0)
 BTN.Size = UDim2.new(0, 125, 0, 30)
@@ -732,7 +774,7 @@ FreeBTN.Size = UDim2.new(0, 125, 0, 30)
 BTN_2.Name = "BTN"
 BTN_2.Parent = FreeBTN
 BTN_2.AnchorPoint = Vector2.new(0.5, 0.5)
-BTN_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BTN_2.BackgroundColor3 = Color3.fromRGB(50, 255, 50)
 BTN_2.BackgroundTransparency = 0.500
 BTN_2.Position = UDim2.new(0.5, 0, 0.349999994, 0)
 BTN_2.Size = UDim2.new(0, 125, 0, 30)
@@ -830,7 +872,7 @@ local function ORTX_fake_script() -- BTN.Manager
 
 			v2:Create(v1, TweenInfo.new(Time, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0, false, 0), {BackgroundColor3 = Color3.fromRGB(255, 50, 50)}):Play()
 			wait(Time + Time)
-			v2:Create(v1, TweenInfo.new(Time, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0, false, 0), {BackgroundColor3 = Color3.fromRGB(0, 255, 0)}):Play()
+			v2:Create(v1, TweenInfo.new(Time, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0, false, 0), {BackgroundColor3 = Color3.fromRGB(212, 175, 55)}):Play()
 		end
 	end)
 end
