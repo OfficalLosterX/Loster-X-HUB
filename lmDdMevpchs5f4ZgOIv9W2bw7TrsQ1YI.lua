@@ -1,1 +1,1 @@
-_G.Key = "XptBgJbYYHTCzMQKYhHJBzvpxjpF9utD"
+_G.IZW0auO2fQ = "9d2O0ZVS0Ur3jR1dTqvddLfIAaOci24z"
